@@ -18,13 +18,16 @@ class Bread {
     }
   }
 
-  void toastedBread(int slices) {
-    numberOfSlices(toastedOnes) {
-      _sliceCount = toastedOnes;
-    }
+  int _toastedSlices = 0;
+  set toastCounter(int toastedOnes) {
+    _toastedSlices = toastedOnes;
+  }
 
-    if (numberOfSlices == _sliceCount) {
-      print('These are the toasted slices');
+  void toastedBread(int slices) {
+    if (_toastedSlices == 0) {
+      print('There are no slices toasted');
+    } else {
+      _toastedSlices = _toastedSlices + slices;
     }
   }
 }

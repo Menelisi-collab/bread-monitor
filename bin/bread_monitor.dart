@@ -13,6 +13,6 @@ void main() {
   brownBread.decreaseSlices(25);
   print('We have ${brownBread.numberOfSlices} slices left');
 
-  brownBread.toastedBread(6);
-  print('We have ${brownBread.numberOfSlices} slices toasted');
+  brownBread.toastedBread(5);
+  print('We have ${brownBread.toastedBread} slices taosted');
 }
