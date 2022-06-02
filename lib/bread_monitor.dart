@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 class Bread {
   int _sliceCount;
 
@@ -18,16 +20,13 @@ class Bread {
     }
   }
 
-  int _toastedSlices = 0;
+  int toastedSlices = 5;
   set toastCounter(int toastedOnes) {
-    _toastedSlices = toastedOnes;
+    toastedSlices = toastedOnes;
   }
 
   void toastedBread(int slices) {
-    if (_toastedSlices == 0) {
-      print('There are no slices toasted');
-    } else {
-      _toastedSlices = _toastedSlices + slices;
+    _sliceCount == (toastedSlices + numberOfSlices);
     }
   }
 }

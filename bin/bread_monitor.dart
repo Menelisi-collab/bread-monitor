@@ -14,5 +14,5 @@ void main() {
   print('We have ${brownBread.numberOfSlices} slices left');
 
   brownBread.toastedBread(5);
-  print('We have ${brownBread.toastedBread} slices taosted');
+  print('We have ${brownBread.numberOfSlices} slices taosted');
 }
